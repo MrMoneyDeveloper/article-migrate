@@ -1,0 +1,23 @@
+{
+  "name": "article-migrate",
+  "version": "0.2.1",
+  "description": "CX Experts Article Migrate",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/verify.cjs",
+    "package": "npm run build && python scripts/package.py"
+  },
+  "keywords": [],
+  "author": "CX Experts",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "motion": "13.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "esbuild": "0.28.2",
+    "prettier": "3.9.6"
+  },
+  "private": true
+}

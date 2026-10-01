@@ -1,0 +1,16 @@
+{
+  "name": "Article Migrate",
+  "author": {
+    "name": "CX Experts",
+    "email": "replace@example.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "nav_bar": "assets/iframe.html"
+    }
+  },
+  "version": "0.2.1",
+  "frameworkVersion": "2.0"
+}

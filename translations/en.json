@@ -1,0 +1,7 @@
+{
+  "app": {
+    "name": "Article Migrate",
+    "short_description": "Migrate Zendesk Help Center content between instances.",
+    "long_description": "Migrate categories, sections, articles and related Help Center content while preserving hierarchy."
+  }
+}

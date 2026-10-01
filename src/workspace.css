@@ -1,0 +1,40 @@
+@import './design.css';
+/* A nav_bar iframe is sized by Zendesk. Scroll inside its allocated height. */
+html,body,#root{height:100%;min-height:0;width:100%;margin:0;overflow:hidden}
+.workspace{height:100%;height:100dvh;min-height:0;display:flex;flex-direction:column;background:#f7f6fa;color:#282236}
+.workspace-header{display:flex;flex:none;align-items:center;gap:22px;padding:12px 20px;background:white;border-bottom:1px solid #e5dfea}
+.workspace-header img{width:190px;height:auto;max-width:35%;object-fit:contain}
+.workspace-header h1{font-size:22px;line-height:1.2;margin:0;color:#562079;letter-spacing:-.5px}
+.workspace-header p{margin:4px 0 0;font-size:12px;color:#71657a}
+.workspace-tabs{display:flex;flex:none;gap:8px;padding:10px 20px;border-bottom:1px solid #e5dfea;background:white}
+.workspace-tabs button{min-height:36px;font-size:12px;background:#f3eef7;color:#65546f}
+.workspace-tabs button[aria-pressed=true]{background:#7827ac;color:white}
+.workspace-scroll{min-height:0;flex:1;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable;padding:14px 20px 20px;scroll-padding:12px}
+.workspace-card{background:white;border:1px solid #e5dfea;border-radius:10px;padding:16px;margin-bottom:12px;min-width:0}
+.workspace-card h2{font-size:14px;margin:0 0 8px;font-weight:650}
+.workspace-card p{font-size:12px;line-height:1.5;margin:6px 0 12px;overflow-wrap:anywhere}
+.notice{border:1px solid #dcd0e7;background:#f0eaf5;color:#562079;padding:11px 14px;border-radius:8px;font-size:13px;line-height:1.5;margin-bottom:12px;overflow-wrap:anywhere}
+.notice.success{border-color:#b8dec5;background:#edf8f1;color:#17653a}
+.notice.error,.validation-error{color:#a03227;background:#fff2ef;border-color:#edc2ba}
+.compact-drop{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 14px;border:1px dashed #ba95d1;border-radius:8px;background:#fcfafd;font-size:12px;color:#786680}
+.compact-drop:hover{background:#f2eaf8}.compact-drop button{flex-shrink:0;font-size:12px}
+.workspace .template-card{padding:14px 16px;margin:0;border-radius:10px;gap:12px}
+.workspace .template-icon{width:34px;flex-basis:34px;height:38px}
+.workspace .template-copy h2{font-size:13px}
+.workspace .template-download>span{max-width:250px;line-height:1.5}
+.workflow-controls{flex:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;background:white;border-top:1px solid #d9cbe4;box-shadow:0 -4px 14px #3e165c08;z-index:2}
+.workflow-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.workflow-controls button{font-size:12px;min-height:38px;padding:0 13px}
+.migration-confirm{display:grid;gap:6px;min-width:0}
+.migration-confirm label{font-size:11px;color:#685674}
+.migration-confirm>div{display:flex;gap:8px}
+.migration-confirm input{width:130px;min-width:0;min-height:38px;border:1px solid #cab8d5;border-radius:7px;padding:0 10px;font:inherit;font-size:12px}
+.migration-confirm input:disabled{background:#f5f2f7;color:#9e91a7}
+.workspace summary{font-size:12px;color:#7023a8;cursor:pointer;padding:4px 0}
+.hierarchy{padding:10px 0;font-size:12px;overflow-wrap:anywhere}.hierarchy>div{margin:8px 0 0 12px}.hierarchy small{color:#7a6c82}
+.result-item{display:grid;grid-template-columns:70px minmax(0,1fr) 80px minmax(0,1fr);gap:12px;padding:8px;border-bottom:1px solid #eee7f2;font-size:12px;overflow-wrap:anywhere}
+.result-item>*{min-width:0}.result-item .status-pill{justify-self:start}
+.export-summary{color:#17653a}
+@media(max-width:750px){.workspace-header{gap:14px;padding:10px 14px}.workspace-header h1{font-size:19px}.workspace-header p{font-size:11px}.workspace-tabs{padding:8px 14px}.workspace-scroll{padding:12px 14px}.workflow-controls{padding:10px 14px;align-items:stretch;flex-direction:column;gap:8px}.workflow-buttons button{flex:1}.migration-confirm>div input{flex:1;width:100%}.migration-confirm button{flex:1}.workspace .template-download{margin-left:0}.workspace .template-card{flex-wrap:wrap}.result-item{grid-template-columns:60px minmax(0,1fr) 70px}.result-item>span:last-child{grid-column:1/-1}}
+@media(max-width:430px){.workspace-header img{width:130px}.workspace-header h1{font-size:17px}.workspace-header p{display:none}.workspace-tabs button{flex:1;padding:0 8px;font-size:11px}.compact-drop{align-items:stretch;flex-direction:column}.workspace .template-copy{flex-basis:100%}}
+@media(max-height:500px){.workspace-header{padding-top:6px;padding-bottom:6px}.workspace-header p{display:none}.workspace-header img{width:145px}.workspace-tabs{padding-top:5px;padding-bottom:5px}.workflow-controls{padding-top:6px;padding-bottom:6px;gap:5px}.migration-confirm label{font-size:10px}}
