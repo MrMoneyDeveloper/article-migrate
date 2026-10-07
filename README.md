@@ -1,5 +1,12 @@
 # Article Migrate — CX Experts
 
+## Technical handover and dependencies
+
+- [Technical handover](HANDOVER.md): ownership, setup, credential rotation, verification and recovery.
+- [Dependency and API/OAuth configuration list](DEPENDENCIES.md): runtime, external services and configuration inventory.
+
+**Handover requirement:** all API/OAuth credentials and related shared/deployment secrets in use must be rotated or reissued, configured and tested under the receiving owner. Completion must be recorded; these documentation changes do not rotate live credentials.
+
 ## Overview and handover status
 
 Article Migrate is a private Zendesk Support nav-bar application for exporting Help Center articles to CSV and creating categories, sections, and articles from a CSV in the current instance. It supports instance-to-instance migration and manually prepared content.
